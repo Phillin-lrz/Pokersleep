@@ -18,7 +18,9 @@
     if (!raw || raw.startsWith("//")) return "#";
     try {
       const parsed = new URL(raw, window.location.href);
-      if (parsed.protocol !== "http:" && parsed.protocol !== "https:") return "#";
+      const isWebUrl = parsed.protocol === "http:" || parsed.protocol === "https:";
+      const isLocalFile = parsed.protocol === "file:" && window.location.protocol === "file:";
+      if (!isWebUrl && !isLocalFile) return "#";
       return raw;
     } catch (_error) {
       return "#";

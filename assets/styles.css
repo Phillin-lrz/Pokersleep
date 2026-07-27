@@ -1354,6 +1354,20 @@ a {
   margin-bottom: 0;
 }
 
+.entry-signature {
+  margin: var(--space-8) 0 0;
+  text-align: right;
+}
+
+.entry-signature img {
+  display: inline-block;
+  width: min(9rem, 45vw);
+  height: auto;
+  opacity: 0.9;
+  clip-path: inset(0 0 1px);
+  filter: invert(88%) sepia(22%) saturate(460%) hue-rotate(286deg) brightness(106%) contrast(90%);
+}
+
 .keeper-letter {
   position: relative;
   padding: clamp(1.35rem, 3vw, 2rem);
