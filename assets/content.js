@@ -9,6 +9,14 @@ window.POKER_CONFIG = {
 
 window.POKER_THOUGHTS = [
   {
+    id: "childhood-friend-is-back",
+    category: "碎碎念",
+    summary: "最近发小回来了，休息一两天就被抓出去玩。有人陪着吃喝玩乐还不挑，开心捏。",
+    publishedAt: "2026-08-22",
+    contentRating: "adult",
+    url: "thought-childhood-friend-is-back.html",
+  },
+  {
     id: "cat-prince-invades-dog-world",
     category: "碎碎念",
     title: "猫猫少爷闯入傻狗世界霸占一窝",

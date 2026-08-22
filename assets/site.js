@@ -68,8 +68,8 @@
         "card-meta",
         `${entry.section || entry.category || "记录"} · ${formatDate(entry.publishedAt)}${entry.contentRating === "adult" ? " · 18+" : ""}`
       );
-      const title = createTextElement("h3", "", "");
-      const link = createTextElement("a", "", entry.title || "未命名记录");
+      const titleText = String(entry.title || "").trim();
+      const link = createTextElement("a", "", titleText || "阅读全文");
       link.href = safeHref(entry.url);
       try {
         const destination = new URL(link.href, window.location.href);
@@ -80,9 +80,17 @@
       } catch (_error) {
         link.href = "#";
       }
-      title.append(link);
       const summary = createTextElement("p", "", entry.summary || "没有附加说明。");
-      article.append(meta, title, summary);
+      article.append(meta);
+      if (titleText) {
+        const title = createTextElement("h3", "", "");
+        title.append(link);
+        article.append(title, summary);
+      } else {
+        const readMore = createTextElement("p", "card-source", "");
+        readMore.append(link);
+        article.append(summary, readMore);
+      }
       const sourceUrl = safeHref(entry.sourceUrl);
       if (sourceUrl !== "#") {
         const sourceLine = createTextElement("p", "card-source", "");
