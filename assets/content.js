@@ -26,7 +26,15 @@ window.POKER_THOUGHTS = [
   },
 ];
 window.POKER_LIFE = [];
-window.POKER_DRINKS = [];
+window.POKER_DRINKS = [
+  {
+    id: "minus-196-lemon-white-monster",
+    category: "配方",
+    title: "三得利-196柠檬味 × 白魔爪",
+    summary: "三得利-196柠檬味和白魔爪按 1:1 兑。",
+    publishedAt: "2026-08-22",
+  },
+];
 window.POKER_BEDROOM = [];
 window.POKER_GRIPES = [];
 window.POKER_FRIENDS = [];

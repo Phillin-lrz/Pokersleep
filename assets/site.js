@@ -69,27 +69,34 @@
         `${entry.section || entry.category || "记录"} · ${formatDate(entry.publishedAt)}${entry.contentRating === "adult" ? " · 18+" : ""}`
       );
       const titleText = String(entry.title || "").trim();
-      const link = createTextElement("a", "", titleText || "阅读全文");
-      link.href = safeHref(entry.url);
-      try {
-        const destination = new URL(link.href, window.location.href);
-        if (destination.origin !== window.location.origin) {
-          link.target = "_blank";
-          link.rel = "noopener noreferrer";
+      const entryUrl = safeHref(entry.url);
+      let link = null;
+      if (entryUrl !== "#") {
+        link = createTextElement("a", "", titleText || "阅读全文");
+        link.href = entryUrl;
+        try {
+          const destination = new URL(link.href, window.location.href);
+          if (destination.origin !== window.location.origin) {
+            link.target = "_blank";
+            link.rel = "noopener noreferrer";
+          }
+        } catch (_error) {
+          link = null;
         }
-      } catch (_error) {
-        link.href = "#";
       }
       const summary = createTextElement("p", "", entry.summary || "没有附加说明。");
       article.append(meta);
       if (titleText) {
-        const title = createTextElement("h3", "", "");
-        title.append(link);
+        const title = createTextElement("h3", "", link ? "" : titleText);
+        if (link) title.append(link);
         article.append(title, summary);
       } else {
-        const readMore = createTextElement("p", "card-source", "");
-        readMore.append(link);
-        article.append(summary, readMore);
+        article.append(summary);
+        if (link) {
+          const readMore = createTextElement("p", "card-source", "");
+          readMore.append(link);
+          article.append(readMore);
+        }
       }
       const sourceUrl = safeHref(entry.sourceUrl);
       if (sourceUrl !== "#") {
