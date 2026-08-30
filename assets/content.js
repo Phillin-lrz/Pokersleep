@@ -36,5 +36,13 @@ window.POKER_DRINKS = [
   },
 ];
 window.POKER_BEDROOM = [];
-window.POKER_GRIPES = [];
+window.POKER_GRIPES = [
+  {
+    id: "hungry-after-an-all-nighter",
+    text: "熬了通宵，现在只想吃饱。再饿下去真的要饿出猫病了，减肥怎么这么痛苦。还有，我爱白魔爪。",
+    mood: "通宵后的饿猫",
+    emoji: "😾",
+    publishedAt: "2026-08-30",
+  },
+];
 window.POKER_FRIENDS = [];

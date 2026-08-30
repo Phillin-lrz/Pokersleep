@@ -2,11 +2,11 @@
 
 ## Current phase
 
-The first static implementation and project-governance routing are complete locally. The site is not published and now contains two owner-supplied text posts and one owner-supplied drink recipe; it still contains no photographs.
+The first static implementation and project-governance routing are complete locally. The site is not published and now contains two owner-supplied text posts, one owner-supplied drink recipe, and one owner-supplied gripe; it still contains no photographs.
 
 ## Confirmed state
 
-- All primary pages, shared navigation, honest empty states, the global gripe rail, brand exports, and the GitHub Pages workflow exist locally.
+- All primary pages, shared navigation, the global gripe rail with its first owner-supplied entry, brand exports, and the GitHub Pages workflow exist locally; sections without real content keep honest empty states.
 - Two real “扑克碎碎念” entries have been added from owner-supplied text, each with its own standalone detail page; the newer entry is marked 18+ because it mentions sex toys.
 - Titleless thought entries render their summary followed by “阅读全文”; explicitly titled entries keep their linked heading.
 - Content cards without a detail URL render as plain text without a dead link; this supports concise drink recipes.
