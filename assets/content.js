@@ -9,6 +9,14 @@ window.POKER_CONFIG = {
 
 window.POKER_THOUGHTS = [
   {
+    id: "birthday-policy",
+    category: "生日特刊",
+    title: "Birthday Policy",
+    summary: "猫窝今天应该挂一块新牌子：今日寿星拥有最终解释权。看门狗没有意见。今天猫猫少爷说什么都算。",
+    publishedAt: "2026-09-12",
+    url: "thought-birthday-policy.html",
+  },
+  {
     id: "childhood-friend-is-back",
     category: "碎碎念",
     summary: "最近发小回来了，休息一两天就被抓出去玩。有人陪着吃喝玩乐还不挑，开心捏。",
