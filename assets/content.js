@@ -33,7 +33,16 @@ window.POKER_THOUGHTS = [
     url: "thought-cat-prince-invades-dog-world.html",
   },
 ];
-window.POKER_LIFE = [];
+window.POKER_LIFE = [
+  {
+    id: "dog",
+    category: "生活",
+    title: "狗",
+    summary: "勉强考虑一下",
+    publishedAt: "2026-09-17",
+    url: "life.html#dog",
+  },
+];
 window.POKER_DRINKS = [
   {
     id: "minus-196-lemon-white-monster",

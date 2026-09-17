@@ -2,11 +2,12 @@
 
 ## Current phase
 
-The first static implementation and project-governance routing are complete locally. The site is not published and now contains three owner-supplied text posts, one owner-supplied drink recipe, and one owner-supplied gripe; it still contains no photographs.
+The first static implementation and project-governance routing are complete locally. The site is not published and now contains three owner-supplied text posts, one owner-supplied life entry with a chat screenshot, one owner-supplied drink recipe, and one owner-supplied gripe; it still contains no photographs.
 
 ## Confirmed state
 
 - All primary pages, shared navigation, the global gripe rail with its first owner-supplied entry, brand exports, and the GitHub Pages workflow exist locally; sections without real content keep honest empty states.
+- The first life entry, “狗 / 勉强考虑一下”, is native HTML on `life.html#dog`, with the unmodified owner-supplied screenshot at `assets/life/dog.jpg`. Its metadata feeds the homepage; 2026-09-17 is the collection date, not a claimed chat date. Add future life entries to both the native page and `assets/content.js`.
 - Three real “扑克碎碎念” entries have been added from owner-supplied text, each with its own standalone detail page; the 2026-08-22 entry is marked 18+ because it mentions sex toys.
 - Titleless thought entries render their summary followed by “阅读全文”; explicitly titled entries keep their linked heading.
 - Content cards without a detail URL render as plain text without a dead link; this supports concise drink recipes.
@@ -21,6 +22,7 @@ Visually review the restrained full-site typography and compact page headers at 
 
 ## Last site verification
 
+- The first life entry was visually checked at 1440 × 1000 and 390 × 844 CSS pixels; its 1320 × 1093 screenshot loaded without horizontal overflow or browser warnings/errors, and the homepage entry link was click-tested to `life.html#dog`.
 - The “Birthday Policy” birthday feature was checked against its source DOCX line by line, then checked on its detail page and thoughts-list route at 1440 × 1000 and 390 × 844 CSS pixels with no horizontal overflow, browser console errors, or broken detail link.
 - The first owner-supplied drink recipe was checked on the drinks page and homepage; it renders as a plain card with no dead link or browser console errors.
 - The second owner-supplied thought was checked as a titleless 18+ entry on the homepage, thoughts list, and detail page at desktop and 390 × 844 CSS pixels, with no horizontal overflow or browser console errors.

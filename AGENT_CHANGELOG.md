@@ -8,3 +8,7 @@
 - 2026-07-26: Added a small activity-specific CSS cat vignette beside every inner-page title while keeping the homepage sleeping-cat scene; no image dependency or generated media was added.
 - 2026-07-26: Removed the unclear header motion-toggle button and its stored JavaScript preference; the subtle background animation now follows the operating-system reduced-motion setting automatically.
 - 2026-07-26: Reworked inner-page title cats into richer arched-window night scenes matching the homepage, with a two-column title composition, responsive scene sizing, a clearly stemmed wine glass, and a softly draped bedroom cover; removed the functionless dot beside the homepage title.
+
+## 2026-09-17 · First life entry
+
+- Added owner-supplied “狗 / 勉强考虑一下” to life.html with the original chat screenshot and a homepage metadata link; marked the date as collection date, replaced empty album placeholders, and refreshed content/CSS cache versions. Native life content works without JavaScript. Rollback: remove this entry and assets/life/dog.jpg, restore the prior life markup, metadata, CSS, cache references, and handoff.

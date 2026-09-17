@@ -1439,6 +1439,16 @@ a {
   font-size: clamp(1.35rem, 2vw, 1.8rem);
 }
 
+.life-photo {
+  margin: var(--space-5) 0 0;
+}
+
+.life-photo img {
+  width: 100%;
+  height: auto;
+  border-radius: var(--radius-md);
+}
+
 .photo-placeholder-grid {
   display: grid;
   grid-template-columns: 1.25fr 0.75fr;
