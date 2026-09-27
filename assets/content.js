@@ -35,6 +35,14 @@ window.POKER_THOUGHTS = [
 ];
 window.POKER_LIFE = [
   {
+    id: "roll-call",
+    category: "生活",
+    title: "点我名了！",
+    summary: "报告！立正！",
+    publishedAt: "2026-09-27",
+    url: "life.html#roll-call",
+  },
+  {
     id: "dog",
     category: "生活",
     title: "狗",
