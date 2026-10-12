@@ -12,3 +12,7 @@
 ## 2026-09-17 · First life entry
 
 - Added owner-supplied “狗 / 勉强考虑一下” to life.html with the original chat screenshot and a homepage metadata link; marked the date as collection date, replaced empty album placeholders, and refreshed content/CSS cache versions. Native life content works without JavaScript. Rollback: remove this entry and assets/life/dog.jpg, restore the prior life markup, metadata, CSS, cache references, and handoff.
+
+- 2026-10-12: Added owner-supplied “续命术” photo to `life.html#life-extension` and homepage metadata, dated 05:00 Beijing time as specified. Preserved the original at `assets/life/life-extension.jpg`; refreshed all content-data cache references. Verified JS syntax, image hash/dimensions, desktop/phone layout, and homepage link. Keeper-note wording pending; no Git publication performed. Roll back by removing this entry and photo and restoring the associated cache/state changes.
+
+- 2026-10-12: Added the owner-selected keeper note “看门狗注：续完记得睡，别一会儿又欠上了。” to the native “续命术” entry; updated handoff. Uses existing `card-source` styling. Verified the exact text, final diff, and whitespace; no deployment. Roll back by removing this paragraph and restoring the associated state updates.

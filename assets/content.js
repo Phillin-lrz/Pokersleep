@@ -35,6 +35,14 @@ window.POKER_THOUGHTS = [
 ];
 window.POKER_LIFE = [
   {
+    id: "life-extension",
+    category: "生活",
+    title: "续命术",
+    summary: "凌晨五点。",
+    publishedAt: "2026-10-12T05:00:00+08:00",
+    url: "life.html#life-extension",
+  },
+  {
     id: "roll-call",
     category: "生活",
     title: "点我名了！",
