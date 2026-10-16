@@ -35,6 +35,13 @@ window.POKER_THOUGHTS = [
 ];
 window.POKER_LIFE = [
   {
+    id: "a-little-drink-and-water",
+    category: "生活",
+    summary: "不打游戏不睡觉 喝点酒等身体发热喝水等温度降下去再继续喝真的很放松有人懂我嘛🥺🥺🥺",
+    publishedAt: "2026-10-16",
+    url: "life.html#a-little-drink-and-water",
+  },
+  {
     id: "life-extension",
     category: "生活",
     title: "续命术",
